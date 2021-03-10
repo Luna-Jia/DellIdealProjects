@@ -10,6 +10,10 @@
          style="-fx-border-color:red;-fx-border-width:3;-fx-border-style:dashed"
 spacing="10">
 <!--    上一行用css给窗口加红色虚线边框-->
+    <padding>
+        <Insets bottom="10" right="10"/>
+    </padding>
+    
      <Button text="Okay"/>
     <Button text="Cancel"/>
     <Button text="Help"/>
