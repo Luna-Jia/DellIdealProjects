@@ -1,0 +1,24 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="top_center" hgap="10" vgap="10"
+          gridLinesVisible="true">
+    <padding> //距离顶端10空隙
+        <Insets top="10"/>
+    </padding>
+<!--    <columnConstraints>-->
+<!--        <ColumnConstraints percentWidth="50.0"/>-->
+<!--        <ColumnConstraints percentWidth="50.0"/>-->
+<!--    </columnConstraints>-->
+    <Button text="Button One" GridPane.rowIndex="0" GridPane.columnIndex="0"
+    GridPane.halignment="RIGHT"/> //button 右侧对齐
+    <Button text="Button Two" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <Button text="Button Three" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <Button text="Really Long Button Four" GridPane.rowIndex="3" GridPane.columnIndex="0"
+    GridPane.rowSpan="2"/> //合并2个单元格
+    <Button text="Button Five" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+</GridPane>
